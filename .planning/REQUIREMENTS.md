@@ -69,14 +69,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | FEED-01 | Phase 1 | Complete |
 | FEED-02 | Phase 1 | Complete |
-| RIVER-01 | Phase 1 | Pending |
+| RIVER-01 | Phase 1 | Complete |
 | RIVER-02 | Phase 1 | Complete |
 | RIVER-03 | Phase 1 | Complete |
-| HTML-01 | Phase 1 | Pending |
-| HTML-02 | Phase 1 | Pending |
-| STATE-01 | Phase 1 | Pending |
-| READ-01 | Phase 1 | Pending |
-| READ-02 | Phase 2 | Pending |
+| HTML-01 | Phase 1 | Complete |
+| HTML-02 | Phase 1 | Complete |
+| STATE-01 | Phase 1 | Complete |
+| READ-01 | Phase 1 | Complete |
+| READ-02 | Phase 2 | Complete |
 | REPO-01 | Phase 1 | Complete |
 
 **Coverage:**

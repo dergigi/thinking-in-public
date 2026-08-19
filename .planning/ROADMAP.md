@@ -13,8 +13,8 @@ A visitor opens a local Vite site and reads the live `thoughts` feed from dergig
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Live reading river** - Runtime feed, river, empty state, paper surface, repo conventions
-- [ ] **Phase 2: Impeccable polish** - Impeccable Read typeset, layout, distill, and polish on the live river
+- [x] **Phase 1: Live reading river** - Runtime feed, river, empty state, paper surface, repo conventions
+- [x] **Phase 2: Impeccable polish** - Impeccable Read typeset, layout, distill, and polish on the live river
 
 ## Phase Details
 
@@ -40,7 +40,7 @@ Plans:
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
-- [ ] 01-02-PLAN.md — Sanitize, rewrite, UTC dates, empty state, paper surface
+- [x] 01-02-PLAN.md — Sanitize, rewrite, UTC dates, empty state, paper surface
 
 **UI hint**: yes
 
@@ -66,5 +66,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Live reading river | 1/2 | In Progress|  |
+| 1. Live reading river | 2/2 | Complete    | 2026-08-19 |
 | 2. Impeccable polish | 0/? | Not started | - |
