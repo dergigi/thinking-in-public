@@ -1,3 +1,4 @@
+import './styles/reading.css'
 import './style.css'
 import { loadRiver } from './feed/loadRiver.ts'
 import { render } from './ui/render.ts'

@@ -1,5 +1,6 @@
 import { fetchFeed } from './fetchFeed.ts'
 import { parseRss } from './parseRss.ts'
+import { sanitizeHtml } from './sanitizeHtml.ts'
 import type { Piece, RiverState } from './types.ts'
 
 export async function loadRiver(): Promise<RiverState> {
@@ -20,7 +21,7 @@ export async function loadRiver(): Promise<RiverState> {
     title: item.title,
     publishedAt: item.publishedAt,
     canonicalUrl: item.link,
-    bodyText: item.description,
+    bodyHtml: sanitizeHtml(item.description),
   }))
 
   return { status: 'ready', pieces }

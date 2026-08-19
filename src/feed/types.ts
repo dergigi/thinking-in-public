@@ -2,7 +2,7 @@ export type Piece = {
   title: string
   publishedAt: Date | null
   canonicalUrl: string
-  bodyText: string
+  bodyHtml: string
 }
 
 export type EmptyReason =

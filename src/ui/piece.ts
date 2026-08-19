@@ -1,5 +1,12 @@
 import type { Piece } from '../feed/types.ts'
 
+const dateFormat = new Intl.DateTimeFormat('en-GB', {
+  timeZone: 'UTC',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+})
+
 export function renderPiece(piece: Piece): HTMLElement {
   const article = document.createElement('article')
   article.className = 'piece'
@@ -10,23 +17,22 @@ export function renderPiece(piece: Piece): HTMLElement {
   const date = document.createElement('time')
   if (piece.publishedAt) {
     date.dateTime = piece.publishedAt.toISOString()
-    date.textContent = piece.publishedAt.toLocaleDateString('en-GB', {
-      timeZone: 'UTC',
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-    })
+    date.textContent = dateFormat.format(piece.publishedAt)
   }
 
   const body = document.createElement('div')
   body.className = 'body'
-  body.textContent = piece.bodyText
+  body.innerHTML = piece.bodyHtml
 
   const permalink = document.createElement('a')
   permalink.className = 'canonical'
   permalink.href = piece.canonicalUrl
-  permalink.textContent = piece.canonicalUrl
+  permalink.textContent = 'On dergigi.com'
 
-  article.append(title, date, body, permalink)
+  article.append(title)
+  if (piece.publishedAt) {
+    article.append(date)
+  }
+  article.append(body, permalink)
   return article
 }
