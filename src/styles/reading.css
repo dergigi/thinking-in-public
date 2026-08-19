@@ -200,7 +200,7 @@ body {
 .footer {
   margin: var(--space-16) 0 0;
   color: var(--ink-soft);
-  font-size: 0.95rem;
+  font-size: 0.8rem;
 }
 
 .footer a,
