@@ -11,4 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Local Vite reading site that loads the live thoughts feed at runtime from https://dergigi.com/thoughts.xml
+- Local Vite reading site that loads https://dergigi.com/thoughts.xml at runtime
+- Newest-first river of title, UTC date, and sanitized HTML
+- Root-relative feed URLs rewritten to https://dergigi.com
+- Quiet empty state when the feed fails or has no items
+- Light paper reading surface

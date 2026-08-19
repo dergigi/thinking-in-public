@@ -39,6 +39,21 @@ body {
   min-height: 100vh;
 }
 
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  transform: translateY(-160%);
+  padding: 0.4rem 0.7rem;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.skip:focus {
+  transform: none;
+}
+
 .page {
   width: min(var(--measure), calc(100% - 2.5rem));
   margin-inline: auto;
@@ -117,7 +132,8 @@ body {
   margin-top: 0.9em;
 }
 
-.piece .body a {
+.piece .body a,
+.piece .body a:visited {
   color: inherit;
   text-underline-offset: 0.18em;
   text-decoration-thickness: 1px;
