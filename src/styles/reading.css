@@ -100,10 +100,6 @@ body {
   padding: 0;
 }
 
-.log li + li .log-line {
-  border-top: 1px solid var(--rule);
-}
-
 .log-line {
   display: grid;
   grid-template-columns: 7.5rem minmax(0, 1fr);
