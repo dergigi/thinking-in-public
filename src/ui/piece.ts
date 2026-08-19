@@ -18,18 +18,18 @@ export function renderPiece(piece: Piece): HTMLElement {
   body.className = 'body'
   body.innerHTML = piece.bodyHtml
 
-  const permalink = document.createElement('a')
-  permalink.className = 'canonical'
-  permalink.href = piece.canonicalUrl
-  permalink.textContent = 'On dergigi.com'
-
   article.append(title)
   if (piece.publishedAt) {
+    const published = document.createElement('a')
+    published.className = 'published'
+    published.href = piece.canonicalUrl
+
     const date = document.createElement('time')
     date.dateTime = piece.publishedAt.toISOString()
     date.textContent = dateFormat.format(piece.publishedAt)
-    article.append(date)
+    published.append(date)
+    article.append(published)
   }
-  article.append(body, permalink)
+  article.append(body)
   return article
 }

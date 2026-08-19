@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Quiet footer with links to dergigi.com and the thoughts feed
 
+### Changed
+
+- Post date links to the original on dergigi.com; the extra "On dergigi.com" line is gone
+
 ### Removed
 
 - GSD runtime, skills, and planning files

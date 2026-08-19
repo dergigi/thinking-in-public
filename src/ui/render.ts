@@ -7,6 +7,21 @@ import { renderPiece } from './piece.ts'
 
 const SITE_TITLE = 'Thinking in Public'
 
+function syncCanonical(href: string | null): void {
+  const existing = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
+  if (!href) {
+    existing?.remove()
+    return
+  }
+
+  const link = existing ?? document.createElement('link')
+  link.rel = 'canonical'
+  link.href = href
+  if (!existing) {
+    document.head.append(link)
+  }
+}
+
 function syncMasthead(isIndex: boolean): void {
   const header = document.querySelector('.masthead')
   if (!header) {
@@ -27,6 +42,7 @@ export function render(root: HTMLElement, state: RiverState): void {
   const isIndex = path === '/'
   syncMasthead(isIndex)
   document.title = SITE_TITLE
+  syncCanonical(null)
   root.replaceChildren()
 
   switch (state.status) {
@@ -45,6 +61,7 @@ export function render(root: HTMLElement, state: RiverState): void {
   }
 
   if (isIndex) {
+    syncCanonical(`${location.origin}/`)
     root.append(renderLog(state.pieces))
     return
   }
@@ -57,5 +74,6 @@ export function render(root: HTMLElement, state: RiverState): void {
   }
 
   document.title = piece.title === SITE_TITLE ? SITE_TITLE : `${piece.title} · ${SITE_TITLE}`
+  syncCanonical(piece.canonicalUrl)
   root.append(renderPiece(piece))
 }
