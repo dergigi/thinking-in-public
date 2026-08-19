@@ -67,23 +67,23 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FEED-01 | — | Pending |
-| FEED-02 | — | Pending |
-| RIVER-01 | — | Pending |
-| RIVER-02 | — | Pending |
-| RIVER-03 | — | Pending |
-| HTML-01 | — | Pending |
-| HTML-02 | — | Pending |
-| STATE-01 | — | Pending |
-| READ-01 | — | Pending |
-| READ-02 | — | Pending |
-| REPO-01 | — | Pending |
+| FEED-01 | Phase 1 | Pending |
+| FEED-02 | Phase 1 | Pending |
+| RIVER-01 | Phase 1 | Pending |
+| RIVER-02 | Phase 1 | Pending |
+| RIVER-03 | Phase 1 | Pending |
+| HTML-01 | Phase 1 | Pending |
+| HTML-02 | Phase 1 | Pending |
+| STATE-01 | Phase 1 | Pending |
+| READ-01 | Phase 1 | Pending |
+| READ-02 | Phase 2 | Pending |
+| REPO-01 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 11 total
-- Mapped to phases: 0
-- Unmapped: 11
+- Mapped to phases: 11
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-08-19*
-*Last updated: 2026-08-19 after initial definition*
+*Last updated: 2026-08-19 after roadmap creation*
