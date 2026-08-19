@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-delegated: Vite official `vanilla-ts` template (Vite 8, TypeScript 6.x) plus DOMPurify. Chosen because GSD stack research picked the smallest runtime-fetch path; CORS on the live feed is already open, so no server framework.
+delegated: Vite official `vanilla-ts` template (Vite 8, TypeScript 6.x) plus DOMPurify. CORS on the live feed is already open, so no server framework.
 
 ## Users
 
