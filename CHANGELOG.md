@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Quote authors in `<cite>` are prefixed with a dash
+- Quote authors in `<cite>` are prefixed with an en-dash, no space
 
 ## [0.0.2] - 2026-08-19
 

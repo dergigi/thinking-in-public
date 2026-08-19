@@ -190,7 +190,7 @@ body {
 }
 
 .piece .body blockquote cite::before {
-  content: '- ';
+  content: '\2013';
 }
 
 .piece .body pre,
