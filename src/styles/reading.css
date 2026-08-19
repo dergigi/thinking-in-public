@@ -197,6 +197,23 @@ body {
   text-underline-offset: 0.18em;
 }
 
+.footer {
+  margin: var(--space-16) 0 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.footer a,
+.footer a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 @media (max-width: 36rem) {
   .log-line {
     grid-template-columns: 1fr;
