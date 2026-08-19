@@ -11,19 +11,8 @@ export function renderPiece(piece: Piece): HTMLElement {
   const article = document.createElement('article')
   article.className = 'piece'
 
-  const details = document.createElement('details')
-  const summary = document.createElement('summary')
-
-  if (piece.publishedAt) {
-    const date = document.createElement('time')
-    date.dateTime = piece.publishedAt.toISOString()
-    date.textContent = dateFormat.format(piece.publishedAt)
-    summary.append(date)
-  }
-
-  const title = document.createElement('h2')
+  const title = document.createElement('h1')
   title.textContent = piece.title
-  summary.append(title)
 
   const body = document.createElement('div')
   body.className = 'body'
@@ -34,7 +23,13 @@ export function renderPiece(piece: Piece): HTMLElement {
   permalink.href = piece.canonicalUrl
   permalink.textContent = 'On dergigi.com'
 
-  details.append(summary, body, permalink)
-  article.append(details)
+  article.append(title)
+  if (piece.publishedAt) {
+    const date = document.createElement('time')
+    date.dateTime = piece.publishedAt.toISOString()
+    date.textContent = dateFormat.format(piece.publishedAt)
+    article.append(date)
+  }
+  article.append(body, permalink)
   return article
 }

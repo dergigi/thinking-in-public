@@ -2,6 +2,7 @@ export type Piece = {
   title: string
   publishedAt: Date | null
   canonicalUrl: string
+  path: string
   bodyHtml: string
 }
 

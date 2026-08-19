@@ -1,3 +1,4 @@
+import { pathFromCanonical } from '../path.ts'
 import { fetchFeed } from './fetchFeed.ts'
 import { parseRss } from './parseRss.ts'
 import { sanitizeHtml } from './sanitizeHtml.ts'
@@ -13,16 +14,25 @@ export async function loadRiver(): Promise<RiverState> {
   if (!parsed.ok) {
     return { status: 'empty', reason: 'parse-failed' }
   }
-  if (parsed.items.length === 0) {
-    return { status: 'empty', reason: 'no-items' }
+
+  const pieces: Piece[] = []
+  for (const item of parsed.items) {
+    const path = pathFromCanonical(item.link)
+    if (!path) {
+      continue
+    }
+    pieces.push({
+      title: item.title,
+      publishedAt: item.publishedAt,
+      canonicalUrl: item.link,
+      path,
+      bodyHtml: sanitizeHtml(item.description),
+    })
   }
 
-  const pieces: Piece[] = parsed.items.map((item) => ({
-    title: item.title,
-    publishedAt: item.publishedAt,
-    canonicalUrl: item.link,
-    bodyHtml: sanitizeHtml(item.description),
-  }))
+  if (pieces.length === 0) {
+    return { status: 'empty', reason: 'no-items' }
+  }
 
   return { status: 'ready', pieces }
 }
