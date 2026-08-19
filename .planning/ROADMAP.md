@@ -32,11 +32,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. If the feed fails or has no items, visitor sees a quiet empty state and no invented posts.
   5. Visitor reads on a light paper page with generous measure, quiet type, almost no chrome, and no cover hero.
 
-**Plans**: 2 plans
+**Plans**: 1/2 plans executed
 Plans:
 **Wave 1**
 
-- [ ] 01-01-PLAN.md — Walking skeleton: Vite river from the live feed
+- [x] 01-01-PLAN.md — Walking skeleton: Vite river from the live feed
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
@@ -66,5 +66,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Live reading river | 0/2 | Not started | - |
+| 1. Live reading river | 1/2 | In Progress|  |
 | 2. Impeccable polish | 0/? | Not started | - |

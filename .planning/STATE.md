@@ -5,15 +5,15 @@ milestone_name: milestone
 current_phase: 1
 current_phase_name: Live reading river
 status: planning
-stopped_at: Phase 1 plans written
-last_updated: "2026-08-19T11:20:00.000Z"
+stopped_at: Completed 01-01-PLAN.md
+last_updated: "2026-08-19T09:20:03.598Z"
 last_activity: 2026-08-19
 last_activity_desc: Phase 1 plans created (2 waves)
 progress:
   total_phases: 1
   completed_phases: 0
   total_plans: 2
-  completed_plans: 0
+  completed_plans: 1
 ---
 
 # Project State
@@ -28,11 +28,11 @@ See: .planning/PROJECT.md (updated 2026-08-19)
 ## Current Position
 
 Phase: 1 of 2 (Live reading river)
-Plan: 0 of 2 in current phase
+Plan: 1 of 2 in current phase
 Status: Ready to execute
 Last activity: 2026-08-19 — Phase 1 plans created (2 waves)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█████░░░░░] 50%
 
 ## Performance Metrics
 
@@ -55,6 +55,11 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: —
 
 *Updated after each plan completion*
+**Per-Plan Metrics:**
+
+| Plan | Duration | Tasks | Files |
+|------|----------|-------|-------|
+| Phase 01-live-reading-river P01 | 3 min | 3 tasks | 20 files |
 
 ## Accumulated Context
 
@@ -66,6 +71,8 @@ Recent decisions affecting current work:
 - Phase 1: Ship fetch, parse, rewrite, sanitize, river, empty state, paper surface, and repo conventions as one slice.
 - Phase 2: Hold READ-02 only (Impeccable polish after live posts are on screen).
 - No phases for CORS proxies, research, or documentation.
+- [Phase 01-live-reading-river]: Honor locked D-01: browser GETs https://dergigi.com/thoughts.xml at runtime
+- [Phase 01-live-reading-river]: Follow official create-vite 9.1.2 vanilla-ts (single tsconfig.json); add empty vite.config.ts so the no-fetch verify can run
 
 ### Pending Todos
 
@@ -85,6 +92,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-08-19T09:04:50.700Z
-Stopped at: Phase 1 plans written
-Resume file: .planning/phases/01-live-reading-river/01-CONTEXT.md
+Last session: 2026-08-19T09:20:03.592Z
+Stopped at: Completed 01-01-PLAN.md
+Resume file: None

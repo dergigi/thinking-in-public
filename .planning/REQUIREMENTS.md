@@ -7,14 +7,14 @@
 
 ### Feed
 
-- [ ] **FEED-01**: Visitor's browser fetches `https://dergigi.com/thoughts.xml` at runtime (not during `vite build`)
-- [ ] **FEED-02**: Site parses RSS 2.0 items and reads title, pubDate, link, and description HTML
+- [x] **FEED-01**: Visitor's browser fetches `https://dergigi.com/thoughts.xml` at runtime (not during `vite build`)
+- [x] **FEED-02**: Site parses RSS 2.0 items and reads title, pubDate, link, and description HTML
 
 ### River
 
 - [ ] **RIVER-01**: Visitor sees each piece's title, calendar date (UTC, no clock), and HTML description
-- [ ] **RIVER-02**: Pieces appear newest first as one long river on a single page
-- [ ] **RIVER-03**: Each piece links to its canonical feed `<link>` on dergigi.com
+- [x] **RIVER-02**: Pieces appear newest first as one long river on a single page
+- [x] **RIVER-03**: Each piece links to its canonical feed `<link>` on dergigi.com
 
 ### HTML
 
@@ -32,7 +32,7 @@
 
 ### Repo
 
-- [ ] **REPO-01**: Commits follow Conventional Commits; version follows SemVer; `CHANGELOG.md` uses Keep a Changelog
+- [x] **REPO-01**: Commits follow Conventional Commits; version follows SemVer; `CHANGELOG.md` uses Keep a Changelog
 
 ## v2 Requirements
 
@@ -67,19 +67,20 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FEED-01 | Phase 1 | Pending |
-| FEED-02 | Phase 1 | Pending |
+| FEED-01 | Phase 1 | Complete |
+| FEED-02 | Phase 1 | Complete |
 | RIVER-01 | Phase 1 | Pending |
-| RIVER-02 | Phase 1 | Pending |
-| RIVER-03 | Phase 1 | Pending |
+| RIVER-02 | Phase 1 | Complete |
+| RIVER-03 | Phase 1 | Complete |
 | HTML-01 | Phase 1 | Pending |
 | HTML-02 | Phase 1 | Pending |
 | STATE-01 | Phase 1 | Pending |
 | READ-01 | Phase 1 | Pending |
 | READ-02 | Phase 2 | Pending |
-| REPO-01 | Phase 1 | Pending |
+| REPO-01 | Phase 1 | Complete |
 
 **Coverage:**
+
 - v1 requirements: 11 total
 - Mapped to phases: 11
 - Unmapped: 0
