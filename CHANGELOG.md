@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Quote authors in `<cite>` are prefixed with a dash
+
 ## [0.0.2] - 2026-08-19
 
 ### Added

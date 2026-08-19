@@ -189,6 +189,10 @@ body {
   border-left: 1px solid var(--rule);
 }
 
+.piece .body blockquote cite::before {
+  content: '- ';
+}
+
 .piece .body pre,
 .piece .body code {
   font-family: ui-monospace, 'Source Code Pro', Menlo, monospace;

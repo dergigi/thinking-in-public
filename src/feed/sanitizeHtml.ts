@@ -57,6 +57,7 @@ export function sanitizeHtml(html: string): string {
       'strong',
       'b',
       'blockquote',
+      'cite',
       'pre',
       'code',
       'a',
