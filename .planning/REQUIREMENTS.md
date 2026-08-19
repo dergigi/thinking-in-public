@@ -12,23 +12,23 @@
 
 ### River
 
-- [ ] **RIVER-01**: Visitor sees each piece's title, calendar date (UTC, no clock), and HTML description
+- [x] **RIVER-01**: Visitor sees each piece's title, calendar date (UTC, no clock), and HTML description
 - [x] **RIVER-02**: Pieces appear newest first as one long river on a single page
 - [x] **RIVER-03**: Each piece links to its canonical feed `<link>` on dergigi.com
 
 ### HTML
 
-- [ ] **HTML-01**: Root-relative `href` and `src` in item HTML resolve to `https://dergigi.com/...`
-- [ ] **HTML-02**: Item HTML is sanitized before insert; title, date, and canonical link are text nodes
+- [x] **HTML-01**: Root-relative `href` and `src` in item HTML resolve to `https://dergigi.com/...`
+- [x] **HTML-02**: Item HTML is sanitized before insert; title, date, and canonical link are text nodes
 
 ### States
 
-- [ ] **STATE-01**: If the feed fails or has no items, visitor sees a quiet empty state with no invented posts
+- [x] **STATE-01**: If the feed fails or has no items, visitor sees a quiet empty state with no invented posts
 
 ### Reading
 
-- [ ] **READ-01**: Light paper reading surface: generous measure, quiet type, almost no chrome, no cover hero
-- [ ] **READ-02**: Design follows Impeccable Read mode (typeset, layout, distill, polish) and does not clone dark dergigi.com
+- [x] **READ-01**: Light paper reading surface: generous measure, quiet type, almost no chrome, no cover hero
+- [x] **READ-02**: Design follows Impeccable Read mode (typeset, layout, distill, polish) and does not clone dark dergigi.com
 
 ### Repo
 
