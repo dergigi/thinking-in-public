@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Footer dergigi.com link goes to the current piece when you are on a post
+
 ### Fixed
 
 - Vercel serves the app for post URLs instead of a 404

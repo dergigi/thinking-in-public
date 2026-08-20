@@ -1,3 +1,4 @@
+import { PUBLISHER_ORIGIN } from '../config.ts'
 import { currentPath } from '../path.ts'
 import type { RiverState } from '../feed/types.ts'
 import { renderEmpty } from './empty-state.ts'
@@ -22,6 +23,13 @@ function syncCanonical(href: string | null): void {
   }
 }
 
+function syncFooterHome(href: string): void {
+  const link = document.querySelector<HTMLAnchorElement>('.footer-home')
+  if (link) {
+    link.href = href
+  }
+}
+
 function syncMasthead(isIndex: boolean): void {
   const header = document.querySelector('.masthead')
   if (!header) {
@@ -43,6 +51,7 @@ export function render(root: HTMLElement, state: RiverState): void {
   syncMasthead(isIndex)
   document.title = SITE_TITLE
   syncCanonical(null)
+  syncFooterHome(PUBLISHER_ORIGIN)
   root.replaceChildren()
 
   switch (state.status) {
@@ -75,5 +84,6 @@ export function render(root: HTMLElement, state: RiverState): void {
 
   document.title = piece.title === SITE_TITLE ? SITE_TITLE : `${piece.title} · ${SITE_TITLE}`
   syncCanonical(piece.canonicalUrl)
+  syncFooterHome(piece.canonicalUrl)
   root.append(renderPiece(piece))
 }
